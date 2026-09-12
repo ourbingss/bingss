@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Title -->
+    <title>Ourbingss</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/pp5.jpg" />
+    <link rel="stylesheet" href="blog.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Ourbingss</span>
+            </div>
+            <!-- Desktop Navigation -->
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="index.html#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="project.html">Project</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="index.html#my-space">My Space</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="index.html#contact">Send Me</a></div>
+            </div>
+            <!-- Hamburger -->
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="project.html">Projects</a>
+                <a href="index.html#contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+    <section class="hero-section">
+        <!-- Main Square Image -->
+        <div class="hero-image" data-aos="zoom-in" data-aos-duration="1200">
+            <img src="img/pp5.jpg" alt="Bings" />
+        </div>
+        <!-- Name -->
+        <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1000">
+            Hello, I'm <span>Bings</span>
+        </h1>
+        <!-- Subtitle -->
+        <p class="hero-subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            "I'm learning that life doesn't have to make sense every day, sometimes it's enough to breathe, let go, and trust the process." - Bings
+        </p>
+        <!-- Social Media -->
+        <div class="hero-socials" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <a href="https://github.com/ourbingss" target="_blank" rel="noopener noreferrer" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://open.spotify.com/user/ourbingss" target="_blank" rel="noopener noreferrer" title="Spotify">
+                <i class="fa-brands fa-spotify"></i>
+            </a>
+            <a href="https://www.pinterest.com/ourbingss/" target="_blank" rel="noopener noreferrer" title="Pinterest">
+                <i class="fa-brands fa-pinterest"></i>
+            </a>
+            <a href="https://discord.com/users/ourbingss" target="_blank" rel="noopener noreferrer" title="Discord">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+        </div>
+        <!-- =================================================
+             MUSIC CARD
+        ================================================== -->
+        <div class="music-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <!-- Music Cover -->
+            <div class="music-cover">
+                <img src="img/ppme.jpeg" alt="Music Cover" />
+            </div>
+            <!-- Music Information -->
+            <div class="music-info">
+                <div class="song-header">
+                    <div class="song-detail">
+                        <h3 class="song-title">No One Else</h3>
+                        <p class="singer-name">Chris Brown</p>
+                    </div>
+                    <i class="fa-solid fa-heart heart-icon"></i>
+                </div>
+                <!-- Audio -->
+                <audio id="audio-player" src="audio/audiome.mp3"></audio>
+                <!-- Progress -->
+                <div class="progress-box">
+                    <input type="range" id="progress-bar" value="0" min="0" max="100" />
+                    <div class="time-display">
+                        <span id="current-time">00:00</span>
+                        <span id="max-time">01:30</span>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <div class="player-controls">
+                    <i class="fa-solid fa-shuffle control-btn"></i>
+                    <i class="fa-solid fa-backward-step control-btn"></i>
+                    <div class="play-btn-wrapper" id="play-btn">
+                        <i class="fa-solid fa-play" id="play-icon"></i>
+                    </div>
+                    <i class="fa-solid fa-forward-step control-btn"></i>
+                    <i class="fa-solid fa-repeat control-btn"></i>
+                </div>
+                <!-- Sound Wave -->
+                <div class="sound-wave" id="sound-wave">
+                    <span></span><span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+    <section id="about" class="know-section">
+        <div class="know-container">
+            <!-- Heading -->
+            <div class="section-heading" data-aos="fade-up" data-aos-duration="1000">
+                <h2>About <span>Me</span></h2>
+                <p>A little introduction before you get to know the person behind this page.</p>
+            </div>
+            <!-- Profile -->
+            <div class="know-profile glass-card" data-aos="fade-up" data-aos-duration="1000">
+                <!-- Image -->
+                <div class="know-profile-image">
+                    <img src="img/pp5.jpg" alt="Bings" />
+                </div>
+                <!-- Text -->
+                <div class="know-profile-text">
+                    <span>HELLO, I'M</span>
+                    <h3>Dynta Andini</h3>
+                    <p>Hi! I'm Andien, but most people know me as Bings or call me Dien. I'm an Informatics Engineering student who enjoys coding, creating things, and exploring whatever catches my interest.</p>
+                    <p>I like keeping things simple. Sometimes I'm coding, sometimes I'm designing, sometimes I'm listening to music, and sometimes I'm just enjoying my own little world.
+                        I don’t have any social media besides the ones above! XO, Bings.</p>
+                    </p>
+                </div>
+            </div>
+            <!-- Personal Cards -->
+            <div class="personal-grid">
+                <!-- Personality -->
+                <div class="personal-card glass-card" data-aos="zoom-in" data-aos-duration="800">
+                    <i class="fa-solid fa-user"></i>
+                    <h3>Who I Am</h3>
+                    <p>Someone who will be by your side in the future, through every chapter yet to come.</p>
+                </div>
+                <!-- Hobbies -->
+                <div class="personal-card glass-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+                    <i class="fa-solid fa-heart"></i>
+                    <h3>Things I Like</h3>
+                    <p>Music, design, coding, games, and little things that might make you stay a little longer.</p>
+                </div>
+                <!-- Current -->
+                <div class="personal-card glass-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                    <i class="fa-solid fa-moon"></i>
+                    <h3>My Vibe</h3>
+                    <p>Quiet nights, good music, random thoughts, and doing things at my own pace.</p>
+                </div>
+            </div>
+            <!-- Little Things -->
+            <div class="little-things glass-card" data-aos="fade-up" data-aos-duration="1000">
+                <h3>A few little <span>things</span></h3>
+                <div class="things-list">
+                    <div class="thing"><i class="fa-solid fa-music"></i> Music</div>
+                    <div class="thing"><i class="fa-solid fa-code"></i> Coding</div>
+                    <div class="thing"><i class="fa-solid fa-palette"></i> Design</div>
+                    <div class="thing"><i class="fa-solid fa-dumbbell"></i> Gym</div>
+                    <div class="thing"><i class="fa-solid fa-gamepad"></i> Games</div>
+                    <div class="thing"><i class="fa-solid fa-microchip"></i> IoT</div>
+                    <div class="thing"><i class="fa-solid fa-moon"></i> Late nights</div>
+                    <div class="thing"><i class="fa-solid fa-house"></i> Introvert</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =====================================================
+         GET TO KNOW ME
+    ====================================================== -->
+    <section id="get-to-know" class="know-section">
+        <div class="know-container">
+            <div class="section-heading" data-aos="fade-up" data-aos-duration="1000">
+                <h2>Get to <span>Know Me</span></h2>
+                <p>Not everything about me fits into a bio, so here's a little more of the random stuff.</p>
+            </div>
+            <div class="personal-grid">
+                <!-- Student -->
+                <div class="personal-card glass-card" data-aos="zoom-in">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h3>Currently</h3>
+                    <p>Studying Informatics Engineering and spending a lot of time learning about technology.</p>
+                </div>
+                <!-- Creative -->
+                <div class="personal-card glass-card" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <h3>Creative Side</h3>
+                    <p>I enjoy playing with visuals, designs, layouts, and random ideas whenever inspiration hits.</p>
+                </div>
+                <!-- Random -->
+                <div class="personal-card glass-card" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fa-solid fa-star"></i>
+                    <h3>Random Me</h3>
+                    <p>Sometimes productive, sometimes chaotic, sometimes just listening to music and doing absolutely nothing.</p>
+                </div>
+            </div>
+            <!-- Closing Text -->
+            <div class="glass-card" style="padding: 30px; text-align: center; margin-top: 20px;" data-aos="fade-up" data-aos-duration="1000">
+                <p style="max-width: 650px; margin: 0 auto; font-size: 0.9rem; line-height: 1.9; color: #663d43;">
+                    Anyway, that's a little piece of me. There's probably a lot more to discover, but I guess getting to know someone takes time, doesn't it? ♡
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- =====================================================
+         CONTACT / NGL
+    ====================================================== -->
+    <section id="contact" class="contact-section">
+        <div class="ngl-card glass-card" data-aos="fade-up" data-aos-duration="1000">
+            <!-- Icon -->
+            <div class="ngl-icon">
+                <i class="fa-solid fa-paper-plane"></i>
+            </div>
+            <!-- Heading -->
+            <h2>Wanna say <span>something?</span></h2>
+            <!-- Description -->
+            <p>
+                You can leave me a message anonymously. Say whatever you want — a question, confession, random thought, or just say hi. I won't know who sent it. ♡
+            </p>
+            <!-- NGL Button -->
+            <a href="https://ngl.link/ourbingss" target="_blank" rel="noopener noreferrer" class="ngl-button">
+                <i class="fa-solid fa-message"></i> Send me an anonymous message
+            </a>
+        </div>
+    </section>
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+    <footer class="footer">
+        <p>&copy; 2026 <span>Ourbingss</span>. All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            duration: 1000,
+            once: false
+        });
+        /* =========================
+           HAMBURGER
+        ========================== */
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)";
+        }
+        /* =========================
+           CANCEL
+        ========================== */
+        function cancel() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-500px)";
+        }
+    </script>
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
