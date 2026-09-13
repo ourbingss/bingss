@@ -863,7 +863,7 @@ nav {
 
     color: #663d43;
 
-    font-size: 0.9rem;
+    font-size: 1rem;
 
     line-height: 1.7;
 
@@ -915,7 +915,7 @@ nav {
 .know-profile-text span {
     color: #800e13;
 
-    font-size: 0.7rem;
+    font-size: 0.80rem;
 
     letter-spacing: 2px;
 
@@ -943,7 +943,7 @@ nav {
 
     color: #663d43;
 
-    font-size: 0.9rem;
+    font-size: 1rem;
 
     line-height: 1.8;
 
@@ -987,7 +987,7 @@ nav {
 
     color: #800e13;
 
-    font-size: 1.4rem;
+    font-size: 2rem;
 }
 
 .personal-card h3 {
@@ -995,13 +995,13 @@ nav {
 
     color: #2d080a;
 
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .personal-card p {
     color: #663d43;
 
-    font-size: 0.82rem;
+    font-size: 1rem;
 
     line-height: 1.7;
 
@@ -1021,11 +1021,12 @@ nav {
 
 .little-things h3 {
     margin-bottom: 20px;
-
+    font-size: 1.5rem;
     color: #2d080a;
 }
 
 .little-things h3 span {
+    font-size: 1.2rem;
     color: #800e13;
 }
 
@@ -1050,7 +1051,7 @@ nav {
 
     color: #663d43;
 
-    font-size: 0.78rem;
+    font-size: 0.80rem;
 }
 
 .thing i {
@@ -1122,7 +1123,7 @@ nav {
 
     color: #663d43;
 
-    font-size: 0.88rem;
+    font-size: 1rem;
 
     line-height: 1.8;
 
@@ -1131,26 +1132,16 @@ nav {
 
 .ngl-button {
     display: inline-flex;
-
     justify-content: center;
     align-items: center;
-
     gap: 8px;
-
     padding: 12px 24px;
-
     border-radius: 30px;
-
     background: #800e13;
-
     color: #fff;
-
     text-decoration: none;
-
     font-size: 0.85rem;
-
     font-weight: 600;
-
     transition: 0.3s ease;
 }
 
@@ -1170,24 +1161,18 @@ nav {
 
 .footer {
     width: 100%;
-
     padding: 25px 20px;
-
     text-align: center;
-
     background: rgba(128, 14, 19, 0.05);
-
     border-top:
         1px solid rgba(128, 14, 19, 0.08);
-
     color: #663d43;
-
     font-size: 0.8rem;
-
     opacity: 0.8;
 }
 
 .footer span {
+    font-weight: bold;
     color: #800e13;
 }
 
@@ -1349,7 +1334,7 @@ nav {
 
         margin: 8px auto 18px;
 
-        font-size: 0.8rem;
+        font-size: 0.9rem;
 
         line-height: 1.65;
     }
@@ -1385,64 +1370,51 @@ nav {
        MUSIC CARD MOBILE
     ================================================= */
 
-    .music-card {
-        width: 100%;
-        max-width: 350px;
+.music-card {
+    width: 100%;
+    max-width: 350px;
 
-        margin: 0 auto;
+    margin: 0 auto;
+    padding: 16px;
 
-        padding: 16px;
+    display: flex;
+    align-items: center;
 
-        display: grid;
+    gap: 14px;
 
-        grid-template-columns: 78px 1fr;
+    text-align: left;
 
-        grid-template-rows: auto auto auto;
-
-        column-gap: 14px;
-
-        row-gap: 10px;
-
-        align-items: center;
-
-        text-align: left;
-
-        border-radius: 18px;
-    }
+    border-radius: 18px;
+}
 
 
     /* Cover tetap kecil */
 
-    .music-cover {
-        width: 78px;
-        height: 78px;
+.music-cover {
+    width: 78px;
+    height: 78px;
 
-        grid-column: 1;
-        grid-row: 1 / span 2;
+    flex-shrink: 0;
 
-        margin: 0;
+    margin: 0;
 
-        border-radius: 12px;
-    }
+    object-fit: cover;
 
+    border-radius: 12px;
+}
 
     /* Music info */
 
-    .music-info {
-        width: 100%;
+.music-info {
+    flex: 1;
 
-        grid-column: 2;
-        grid-row: 1 / span 3;
+    min-width: 0;
 
-        min-width: 0;
+    display: flex;
+    flex-direction: column;
 
-        display: flex;
-
-        flex-direction: column;
-
-        gap: 6px;
-    }
-
+    gap: 6px;
+}
     .song-header {
         width: 100%;
 
@@ -1568,7 +1540,7 @@ nav {
     .section-heading p {
         max-width: 340px;
 
-        font-size: 0.78rem;
+        font-size: 1rem;
 
         line-height: 1.7;
     }
@@ -1600,7 +1572,7 @@ nav {
     }
 
     .know-profile-text p {
-        font-size: 0.8rem;
+        font-size: 1rem;
 
         line-height: 1.75;
     }
@@ -1621,11 +1593,11 @@ nav {
     }
 
     .personal-card i {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
     }
 
     .personal-card p {
-        font-size: 0.78rem;
+        font-size: 1rem;
     }
 
 
@@ -1675,8 +1647,7 @@ nav {
     }
 
     .ngl-card p {
-        font-size: 0.78rem;
-
+        font-size: 1rem;
         line-height: 1.75;
     }
 
@@ -1695,7 +1666,6 @@ nav {
 
     .footer {
         padding: 22px 15px;
-
         font-size: 0.72rem;
     }
 }
@@ -1739,21 +1709,17 @@ nav {
 
     /* Music */
 
-    .music-card {
-        max-width: 330px;
+.music-card {
+    max-width: 330px;
+    padding: 14px;
 
-        padding: 14px;
+    gap: 12px;
+}
 
-        grid-template-columns: 70px 1fr;
-
-        column-gap: 12px;
-    }
-
-    .music-cover {
-        width: 70px;
-        height: 70px;
-    }
-
+.music-cover {
+    width: 70px;
+    height: 70px;
+}
     .song-title {
         font-size: 0.88rem;
     }

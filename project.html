@@ -1,285 +1,229 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <title>Ourbingss | Projects</title>
-    <link rel="icon" type="image/png" href="img/pp5.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/pp5.jpg" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-</head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- ================= NAVBAR ================= -->
 
     <nav>
-        <div class="nav-container">
-
-            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
-                <span>Ourbingss</span>
-            </div>
-
-            <div class="links">
-
-                <div class="link"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="100">
-                    <a href="index.html">Home</a>
-                </div>
-
-                <div class="link"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="200">
-                    <a href="index.html#about">About</a>
-                </div>
-
-                <div class="link"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="300">
-                    <a href="project.html">Project</a>
-                </div>
-
-                <div class="link"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="500">
-                    <a href="index.html#my-space">My Space</a>
-                </div>
-
-                <div class="link contact-btn"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="600">
-                    <a href="index.html#contact">Contact Me</a>
-                </div>
-
-            </div>
-
-            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-
+      <div class="nav-container">
+        <!-- Logo -->
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+          <span>Ourbingss</span>
         </div>
 
-        <!-- MOBILE MENU -->
+        <!-- Desktop Navigation -->
+        <div class="links">
+          <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <a href="index.html"> Home </a>
+          </div>
 
-        <div class="dropdown">
+          <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <a href="index.html#about"> About </a>
+          </div>
 
-            <div class="links">
+          <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <a href="project.html"> Project </a>
+          </div>
 
-                <a href="index.html">Home</a>
-                <a href="index.html#about">About</a>
-                <a href="projects.html">Project</a>
-                <a href="blog.html">Blogs</a>
-                <a href="index.html#contact">Contact Me</a>
+          <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <a href="index.html#my-space"> My Space </a>
+          </div>
 
-                <i class="fa-solid fa-xmark cancel"
-                    onclick="cancel()"></i>
-
-            </div>
-
+          <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+            <a href="index.html#contact"> Contact Me </a>
+          </div>
         </div>
 
+        <!-- Hamburger -->
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"> </i>
+      </div>
+
+      <!-- ================= MOBILE MENU ================= -->
+
+      <div class="dropdown">
+        <!-- Close Button dipindah ke luar .links agar posisinya aman -->
+        <i class="fa-solid fa-xmark cancel" onclick="cancel()"> </i>
+
+        <div class="links">
+          <a href="index.html"> Home </a>
+
+          <a href="index.html#about"> About </a>
+
+          <!-- FIX: project.html -->
+          <a href="project.html"> Project </a>
+
+          <a href="blog.html"> Blogs </a>
+
+          <a href="index.html#contact"> Contact Me </a>
+        </div>
+      </div>
     </nav>
-
 
     <!-- ================= PROJECTS ================= -->
 
     <section class="projects-section">
+      <div class="projects-container">
+        <!-- Heading -->
 
-        <div class="projects-container">
+        <h2 data-aos="fade-up" data-aos-duration="1000">My <span>Projects</span></h2>
 
-            <h2 data-aos="fade-up"
-                data-aos-duration="1000">
-                My <span>Projects</span>
-            </h2>
+        <!-- Introduction -->
 
-            <p class="projects-intro"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="100">
+        <p class="projects-intro" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Here are some of the projects I've created.</p>
 
-                Here are some of the projects i've created.
+        <!-- ================= PROJECT GRID ================= -->
 
-            </p>
+        <div class="projects-grid">
+          <!-- ================= PROJECT 1 ================= -->
 
+          <div class="project-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+            <!-- Image -->
 
-            <!-- PROJECT GRID -->
-
-            <div class="projects-grid">
-
-
-                <!-- PROJECT 1 -->
-
-                <div class="project-card"
-                    data-aos="zoom-in"
-                    data-aos-duration="1000"
-                    data-aos-delay="100">
-
-                    <div class="project-image">
-
-                        <img src="img/medika.jpg"
-                            alt="MedikaApps">
-
-                    </div>
-
-                    <div class="project-info">
-
-                        <h3>MedikaApps</h3>
-
-                        <p>
-                            Sistem manajemen kesehatan berbasis web menggunakan Laravel 12 untuk mengelola informasi dan layanan kesehatan.
-                        </p>
-
-                        <div class="project-tags">
-
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>PHP</span>
-
-                        </div>
-
-                        <a href="#"
-                            class="project-btn">
-                            View Project
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PROJECT 2 -->
-
-                <div class="project-card"
-                    data-aos="zoom-in"
-                    data-aos-duration="1000"
-                    data-aos-delay="200">
-
-                    <div class="project-image">
-
-                        <img src="img/garden.jpg"
-                            alt="Automatic Plant Watering">
-
-                    </div>
-
-                    <div class="project-info">
-
-                        <h3>IoT Smart Garden</h3>
-
-                        <p>
-                            Sistem penyiraman tanaman otomatis berbasis IoT menggunakan ESP32 dan dashboard monitoring real-time untuk memantau kondisi tanaman secara online.
-                        </p>
-
-                        <div class="project-tags">
-
-                            <span>Arduino</span>
-                            <span>ESP32</span>
-                            <span>IoT</span>
-
-                        </div>
-
-                        <a href="#"
-                            class="project-btn">
-                            View Project
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PROJECT 3 -->
-
-                <div class="project-card"
-                    data-aos="zoom-in"
-                    data-aos-duration="1000"
-                    data-aos-delay="300">
-
-                    <div class="project-image">
-
-                        <img src="img/soccer.jpg"
-                            alt="Robot Soccer">
-
-                    </div>
-
-                    <div class="project-info">
-
-                        <h3>Robot Soccer</h3>
-
-                        <p>
-                          Robot sepak bola sederhana berbasis ESP32 yang dikendalikan melalui Bluetooth dengan motor DC untuk pergerakan dan servo untuk mekanisme tendangan.
-                        </p>
-
-                        <div class="project-tags">
-
-                            <span>ESP32</span>
-                            <span>Robotics</span>
-                            <span>C++</span>
-
-                        </div>
-
-                        <a href="#"
-                            class="project-btn">
-                            View Project
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-
-                    </div>
-
-                </div>
-
+            <div class="project-image">
+              <img src="img/medika.jpg" alt="MedikaApps" />
             </div>
 
+            <!-- Information -->
+
+            <div class="project-info">
+              <h3>MedikaApps</h3>
+
+              <p>Sistem manajemen kesehatan berbasis web menggunakan Laravel 12 untuk mengelola informasi dan layanan kesehatan.</p>
+
+              <!-- Tags -->
+
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>PHP</span>
+              </div>
+
+              <!-- Button -->
+
+              <a href="#" class="project-btn">
+                View Project
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- ================= PROJECT 2 ================= -->
+
+          <div class="project-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+            <!-- Image -->
+
+            <div class="project-image">
+              <img src="img/garden.jpg" alt="IoT Smart Garden" />
+            </div>
+
+            <!-- Information -->
+
+            <div class="project-info">
+              <h3>IoT Smart Garden</h3>
+
+              <p>Sistem penyiraman tanaman otomatis berbasis IoT menggunakan ESP32 dan dashboard monitoring real-time untuk memantau kondisi tanaman secara online.</p>
+
+              <!-- Tags -->
+
+              <div class="project-tags">
+                <span>Arduino</span>
+                <span>ESP32</span>
+                <span>IoT</span>
+              </div>
+
+              <!-- Button -->
+
+              <a href="#" class="project-btn">
+                View Project
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- ================= PROJECT 3 ================= -->
+
+          <div class="project-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+            <!-- Image -->
+
+            <div class="project-image">
+              <img src="img/soccer.jpg" alt="Robot Soccer" />
+            </div>
+
+            <!-- Information -->
+
+            <div class="project-info">
+              <h3>Robot Soccer</h3>
+
+              <p>Robot sepak bola sederhana berbasis ESP32 yang dikendalikan melalui Bluetooth dengan motor DC untuk pergerakan dan servo untuk mekanisme tendangan.</p>
+
+              <!-- Tags -->
+
+              <div class="project-tags">
+                <span>ESP32</span>
+                <span>Robotics</span>
+                <span>C++</span>
+              </div>
+
+              <!-- Button -->
+
+              <a href="#" class="project-btn">
+                View Project
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
         </div>
-
+      </div>
     </section>
-
 
     <!-- ================= FOOTER ================= -->
 
     <footer class="footer">
+      <p>
+        &copy; 2026
 
-        <p>
-            &copy; 2026
-            <span>Ourbingss</span>.
-            All Rights Reserved.
-        </p>
-
+        <span>Ourbingss</span>. All Rights Reserved.
+      </p>
     </footer>
-
 
     <!-- ================= AOS ================= -->
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script>
-        AOS.init({
-            offset: 0,
-            once: false
-        });
+      AOS.init({
+        offset: 0,
+        once: false,
+      });
     </script>
 
+    <!-- Main JavaScript -->
+
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
